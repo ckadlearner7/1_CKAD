@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 minikube start --driver=virtualbox
 List the currently supported addons:
  minikube addons list
