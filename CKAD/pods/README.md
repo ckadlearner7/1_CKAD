@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 minikube start --driver=virtualbox
 List the currently supported addons:
  minikube addons list
@@ -72,6 +73,26 @@ kubectl scale --replicas=4 deployment/tomcat-deployment
 kubectl expose deployment tomcat-deployment --type=NodePort
 kubectl expose deployment tomcat-deployment --type=LoadBalancer --port=8080 --target-port=8080 --name tomcat-load-balancer
 kubectl describe services tomcat-load-balancer
+=======
+kubectl version
+
+Minikube commands
+minikube start///starts local 1 node cluster
+
+kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --port=8080
+
+kubectl expose deployment hello-minikube --type=NodePort
+
+kubectl get pod
+
+curl $(minikube service hello-minikube --url)
+
+kubectl delete deployment hello-minikube
+
+minikube stop
+
+
+>>>>>>> 9436a58f55d7212d0d0f0160bc9776a7836723d9
 
 # Practice Test - PODs
 
