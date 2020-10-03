@@ -26,6 +26,13 @@ spec:
     matchLabels:
       type: front-end
 ```
+k create -f <>.yaml
+k get deploy
+k get rs
+k get pods
+
+k get all
+
 
 ## Practice files
 
